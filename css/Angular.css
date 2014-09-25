@@ -1,0 +1,22 @@
+.recentPhoto,
+.interestingPhoto {
+	margin-top: 2%;
+	width: 90%;
+	height: 167px;
+	margin-left: 5%;
+	background-color: rgba(0,0,0,.5);
+	overflow-y:hidden;
+	white-space: nowrap;
+}
+
+.recentPhoto div img,
+.interestingPhoto div img {
+	height: 144px;
+}
+.recentPhoto div,
+.interestingPhoto div 
+{
+	display: inline-block;
+	margin: 3px;
+	overflow-x:auto;
+}

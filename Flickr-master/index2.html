@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="myFlickr">
+<head>
+<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	</head>
+<body ng-controller="mainController">
+	<div></div><!-- overlay -->
+	<header>
+		<div>
+		<form>
+			<input type='text' ng-model='SearchTerm' placeholder='Type in your search'>
+			<input type='submit' ng-click='searchBtn()' value='Search'>
+		</form>
+		</div>
+	</header>
+	<section>
+		<div>
+			<!-- di should house the recent photos -->
+			<div ng-repeat="photo in recent">
+			<img ng-src="{{'https://farm'+photo.farm+'.staticflickr.com/'+photo.server+'/'+photo.id+'_'+photo.secret+'.jpg'}}">
+			</div>																									
+		</div>
+		<div>
+			<!-- di should house the interseing photos -->
+		</div>
+		
+	</section>
+	<footer>
+		
+	</footer>
+	<script type="text/javascript" src='js/Angular.js'></script>
+</body>
+</html>
